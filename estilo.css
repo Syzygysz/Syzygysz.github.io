@@ -5,7 +5,7 @@ body{
 }
 
 h1{
-    width: 150px;
+    width: 30%;
     border-style: dashed;
     border-color: rgba(4, 31, 6, 0.767);
     border-width: 1px;
@@ -14,13 +14,30 @@ h1{
     color: rgb(42, 63, 42);
     transition: all 500ms ease-in-out;
     animation: dance 2000ms ease-in-out infinite alternate;
-    font-size: 30px;
+    font-size: 200%;
 }
 
-h1:hover{
-    width: 200px;
-    font-size: 50px;
+@media (min-width:500px){
+    h1{
+        width: 23%;
+    }
+    h1:hover{
+        width: 23%;
+        font-size: 250%;
+    }
 }
+
+@media (max-width:499px){
+    h1{
+        width: 18%;
+        font-size: 150%;
+    }
+    h1:hover{
+        width: 25%;
+        font-size: 200%;
+    }
+}
+
 
 @keyframes cambiarfondo {
 
